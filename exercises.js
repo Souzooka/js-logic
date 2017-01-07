@@ -97,7 +97,7 @@ function mustBeTrue(boo) {
 }
 
 console.log(mustBeTrue(false) + " - Exercise 4");
-console.log(mustBeTrue(true) + " - Exercise 4");
+console.log(mustBeTrue(true) + " - Exercise 4"); //
 
 /*
  * #5
