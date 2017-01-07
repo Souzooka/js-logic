@@ -249,6 +249,12 @@ console.log(evenStevens(14) + " - Exercise 10");
  * Console.log your result.
 */ 
 
+function daClub(cover,age) {
+	return ((age>=21) && (cover>=21));
+}
+
+console.log(daClub(19,23) + " - Exercise 11");
+console.log(daClub(22,22) + " - Exercise 11");
 
 /*
  * #12
