@@ -56,8 +56,9 @@ function login(password) {
   return (userPassword === password);
 }
 
-console.log(login("test1234") + " - Exercise 2");
 console.log(login("test1233") + " - Exercise 2");
+console.log(login("test1234") + " - Exercise 2");
+
 
 /*
  * #3
@@ -72,6 +73,12 @@ console.log(login("test1233") + " - Exercise 2");
  * Console.log your result.
 */
 
+function isGreaterThan(first, second) {
+  return (first > second);
+}
+
+console.log(isGreaterThan(1,2) + " - Exercise 3");
+console.log(isGreaterThan(2,1) + " - Exercise 3");
 
 /*
  * #4
