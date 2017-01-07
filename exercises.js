@@ -293,6 +293,21 @@ console.log(graduation(120,true) + " - Exercise 12");
  * Console.log your result.
 */ 
 
+function moneyTrain(speed) {
+	if (speed < 50) {
+		return "You are riding Honolulu's Rail.";
+	}
+	else if (speed < 100) {
+		return "You are riding an Amtrak.";
+	}
+	else {
+		return "Now you ballin' in the Shinkansen!";
+	}
+}
+
+console.log(moneyTrain(0) + " - Exercise 13");
+console.log(moneyTrain(50) + " - Exercise 13");
+console.log(moneyTrain(100) + " - Exercise 13");
 
 /*
  * #14
