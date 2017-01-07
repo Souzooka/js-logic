@@ -434,9 +434,24 @@ console.log(sumItUp(numArray) + " - Exercise 17");
  * Console.log both the east and west arrays.
 */ 
 
-  var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
-  var east = [];
-  var west = [];
+var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
+var east = [];
+var west = [];
+
+function allStars(ballers) {
+  	for (i=0;i<ballers.length;i++) {
+  		if (i % 2 === 0) {
+  			east.push(ballers[i]);
+  		}
+  		else {
+  			west.push(ballers[i]);
+  		}
+  	}
+}
+
+allStars(players);
+console.log(east + " - Exercise 18");
+console.log(west + " - Exercise 18");
 
 /*
  * #19
