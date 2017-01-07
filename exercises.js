@@ -50,6 +50,14 @@ console.log(canVote(18) + " - Exercise 1");
  * Console.log your result.
 */
 
+var userPassword = "test1234";
+
+function login(password) {
+  return (userPassword === password);
+}
+
+console.log(login("test1234") + " - Exercise 2");
+console.log(login("test1233") + " - Exercise 2");
 
 /*
  * #3
