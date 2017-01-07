@@ -229,6 +229,12 @@ console.log(dirty30(11,10,10) + " - Exercise 9");
  * Console.log your result.
 */ 
 
+function evenStevens(num) {
+  return (num % 2 === 0);
+}
+
+console.log(evenStevens(1) + " - Exercise 10");
+console.log(evenStevens(14) + " - Exercise 10");
 
 /*
  * #11
