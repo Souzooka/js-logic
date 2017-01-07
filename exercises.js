@@ -136,6 +136,14 @@ console.log(bigBird("123") + " - Exercise 5");
  * Console.log your result.
 */
 
+function isEqual(first, second) {
+  return (first === second);
+}
+
+console.log(isEqual("123", 123) + " - Exercise 6");
+console.log(isEqual("1234", "1234") + " - Exercise 6");
+
+
 
 /*
  * #7
