@@ -5,7 +5,7 @@ var today = new Date();
 
 if(today === "Friday"){
   console.log("Let's Party!");
-};
+}
 
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
@@ -15,7 +15,7 @@ if(today === "Friday"){
   console.log("Let's Party!");
 }else{
   console.log("Get back to coding!");
-};
+}
 
 
 /*
@@ -29,6 +29,14 @@ if(today === "Friday"){
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+var votingAgeThreshold = 18;
+
+function canVote(age) {
+  return (age >= votingAgeThreshold);
+}
+
+console.log(canVote(16) + " - Exercise 1");
+console.log(canVote(18) + " - Exercise 1");
 
 /*
  * #2
