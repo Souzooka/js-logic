@@ -189,6 +189,12 @@ console.log(notEqual("123", 123) + " - Exercise 7");
  * Console.log your result.
 */ 
 
+function spareChange(money) {
+  return (money > 100);
+}
+
+console.log(spareChange(100) + " - Exercise 8");
+console.log(spareChange(101) + " - Exercise 8");
 
 /*
  * #9
