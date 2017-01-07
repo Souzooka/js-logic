@@ -116,7 +116,7 @@ function bigBird(word) {
     return "Word to the Big Bird!";
   }
   else {
-    return "Nah";
+  	return "SATISFY MY CONDITIONS";
   }
 }
 
@@ -269,6 +269,17 @@ console.log(daClub(22,22) + " - Exercise 11");
  * Console.log your result.
 */ 
 
+function graduation(credits,thesis) {
+	if (thesis || credits >= 120) {
+		return "Congratulations on a job well done.";
+	}
+	else {
+		return "See you in summer school.";
+	}
+}
+
+console.log(graduation(119,false) + " - Exercise 12");
+console.log(graduation(120,true) + " - Exercise 12");
 
 /*
  * #13
