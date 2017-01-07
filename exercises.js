@@ -111,6 +111,17 @@ console.log(mustBeTrue(true) + " - Exercise 4"); //
  * Console.log your result.
 */
 
+function bigBird(word) {
+  if (word.length === 3) {
+    return "Word to the Big Bird!";
+  }
+  else {
+    return "Nah";
+  }
+}
+
+console.log(bigBird("1234") + " - Exercise 5");
+console.log(bigBird("123") + " - Exercise 5");
 
 /*
  * #6
