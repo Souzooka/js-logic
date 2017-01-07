@@ -92,6 +92,12 @@ console.log(isGreaterThan(2,1) + " - Exercise 3");
  * Console.log your result.
 */
 
+function mustBeTrue(boo) {
+  return boo;
+}
+
+console.log(mustBeTrue(false) + " - Exercise 4");
+console.log(mustBeTrue(true) + " - Exercise 4");
 
 /*
  * #5
