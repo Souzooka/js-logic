@@ -338,13 +338,13 @@ function buyDoughnut() {
 
 for (i=0;i<2;i++) {
 	buyDoughnut();
-	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining.");
+	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining." + " - Exercise 14");
 }
 
 /*
 while (budget >= doughnutPrice) {
 	buyDoughnut();
-	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining.");
+	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining." + " - Exercise 14");
 }
 */
 
@@ -358,12 +358,13 @@ The for loop is made up for 3 parts:
 3) Update (i.e. i++)
 */
 
+/*
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
-
+*/
 
 /* 
  * #15
@@ -375,12 +376,22 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var playerID = 1;
+
+for (i=0;i<5;i++) {
+	console.log("Player: " + playerID + " - Exercise 15");
+	playerID++;
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+
+  for (i=0;i<myFavFoods.length;i++) {
+  	console.log(myFavFoods[i] + " - Exercise 16");
+  }
 
 
 /*
