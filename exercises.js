@@ -1,3 +1,4 @@
+var i = null;
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
@@ -323,6 +324,29 @@ console.log(moneyTrain(100) + " - Exercise 13");
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 92;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut() {
+	if ((budget - doughnutPrice) >= 0 ) {
+		budget -= doughnutPrice;
+		doughnutBought++;
+	}
+}
+
+
+for (i=0;i<2;i++) {
+	buyDoughnut();
+	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining.");
+}
+
+/*
+while (budget >= doughnutPrice) {
+	buyDoughnut();
+	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining.");
+}
+*/
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
