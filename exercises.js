@@ -491,15 +491,16 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
-  
+var phrase = "An apple a day keeps Alice feeling awesome!";
 
+function removeLetter(str) {
+	var newPhrase = [];
+	for (i=0;i<str.length;i++) {
+		if (!(str.charAt(i) === "a" || str.charAt(i) === "A")) {
+			newPhrase.push(str.charAt(i));
+		}
+	}
+	return newPhrase;
+}
 
-
-
-
-
-
-
-
-
+console.log(removeLetter(phrase) + " - Exercise 20");
