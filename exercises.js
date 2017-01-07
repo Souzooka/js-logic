@@ -137,7 +137,12 @@ console.log(bigBird("123") + " - Exercise 5");
 */
 
 function isEqual(first, second) {
-  return (first === second);
+  if (first === second) {
+    return "You look mahvelous!";
+  }
+  else {
+    return "I don't know who you are anymore.";
+  }
 }
 
 console.log(isEqual("123", 123) + " - Exercise 6");
@@ -157,6 +162,19 @@ console.log(isEqual("1234", "1234") + " - Exercise 6");
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
+
+function notEqual(first, second) {
+  if (first !== second) {
+    return "Opposites do attract.";
+  }
+  else {
+    return "Cause it's like you're my mirror.";
+  }
+}
+
+console.log(notEqual("1234", "1234") + " - Exercise 7");
+console.log(notEqual("123", 123) + " - Exercise 7");
+
 
 
 /*
