@@ -409,6 +409,18 @@ for (i=0;i<5;i++) {
  * Console.log your result.
 */
 
+var numArray = [1,2,3,4,5];
+
+function sumItUp(arr) {
+	var sum = 0;
+	for (i=0;i<arr.length;i++) {
+		sum += arr[i];
+	}
+	return sum;
+}
+
+console.log(sumItUp(numArray) + " - Exercise 17");
+
 
 /*
  * #18
