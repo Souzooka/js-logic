@@ -338,13 +338,23 @@ function buyDoughnut() {
 
 for (i=0;i<2;i++) {
 	buyDoughnut();
-	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining." + " - Exercise 14");
+  if (i === 0) {
+	 console.log(doughnutBought + " donut bought, $" + budget + " remaining." + " - Exercise 14");
+  }
+  else if (i > 0) {
+    console.log(doughnutBought + " donuts bought, $" + budget + " remaining." + " - Exercise 14");
+  }
 }
 
 /*
 while (budget >= doughnutPrice) {
 	buyDoughnut();
-	console.log(doughnutBought + " donut(s) bought, $" + budget + " remaining." + " - Exercise 14");
+	if (i === 0) {
+    console.log(doughnutBought + " donut bought, $" + budget + " remaining." + " - Exercise 14");
+  }
+  else if (i > 0) {
+    console.log(doughnutBought + " donuts bought, $" + budget + " remaining." + " - Exercise 14");
+  }
 }
 */
 
