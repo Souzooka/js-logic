@@ -251,7 +251,12 @@ console.log(evenStevens(14) + " - Exercise 10");
 */ 
 
 function daClub(cover,age) {
-	return ((age>=21) && (cover>=21));
+	if ((age>=21) && (cover>=21)) {
+    return "Welcome to the Legends Lounge.";
+  }
+  else {
+    return "Chuck E Cheese is across the street.";
+  }
 }
 
 console.log(daClub(19,23) + " - Exercise 11");
