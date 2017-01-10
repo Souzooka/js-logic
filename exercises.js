@@ -478,12 +478,12 @@ console.log(west + " - Exercise 18");
 var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
 function subways(special) {
-  	for (i=0;i<special.length;i++) {
-  		if (i % 2 === 1) {
-  			special[i] = "Classic Tuna";
-  		}
-  	}
-  	return special;
+	for (i=0;i<special.length;i++) {
+		if (i % 2 === 1) {
+			special[i] = "Classic Tuna";
+		}
+	}
+	return special;
 }
 
 console.log(subways(subOftheDay) + " - Exercise 19");
