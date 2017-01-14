@@ -113,12 +113,7 @@ console.log(mustBeTrue(true) + " - Exercise 4");
 */
 
 function bigBird(word) {
-  if (word.length === 3) {
-    return "Word to the Big Bird!";
-  }
-  else {
-  	return "SATISFY MY CONDITIONS";
-  }
+  return word.length === 3 ? "Word to the Big Bird!" : undefined;
 }
 
 console.log(bigBird("1234") + " - Exercise 5");
@@ -138,12 +133,7 @@ console.log(bigBird("123") + " - Exercise 5");
 */
 
 function isEqual(first, second) {
-  if (first === second) {
-    return "You look mahvelous!";
-  }
-  else {
-    return "I don't know who you are anymore.";
-  }
+  return first === second ? "You look mahvelous!" : "I don't know who you are anymore.";
 }
 
 console.log(isEqual("123", 123) + " - Exercise 6");
@@ -165,12 +155,7 @@ console.log(isEqual("1234", "1234") + " - Exercise 6");
 */
 
 function notEqual(first, second) {
-  if (first !== second) {
-    return "Opposites do attract.";
-  }
-  else {
-    return "Cause it's like you're my mirror.";
-  }
+  return first !== second ? "Opposites do attract." : "Cause it's like you're my mirror.";
 }
 
 console.log(notEqual("1234", "1234") + " - Exercise 7");
@@ -251,12 +236,7 @@ console.log(evenStevens(14) + " - Exercise 10");
 */ 
 
 function daClub(cover,age) {
-	if ((age>=21) && (cover>=21)) {
-    return "Welcome to the Legends Lounge.";
-  }
-  else {
-    return "Chuck E Cheese is across the street.";
-  }
+	return (age>=21 && cover>=21) ? "Welcome to the Legends Lounge." : "Chuck E Cheese is across the street.";
 }
 
 console.log(daClub(19,23) + " - Exercise 11");
@@ -276,12 +256,7 @@ console.log(daClub(22,22) + " - Exercise 11");
 */ 
 
 function graduation(credits,thesis) {
-	if (thesis || credits >= 120) {
-		return "Congratulations on a job well done.";
-	}
-	else {
-		return "See you in summer school.";
-	}
+  return (credits >= 120 || thesis === true) ? "Congratulations on a job well done." : "See you in summer school.";
 }
 
 console.log(graduation(119,false) + " - Exercise 12");
@@ -300,15 +275,7 @@ console.log(graduation(120,true) + " - Exercise 12");
 */ 
 
 function moneyTrain(speed) {
-	if (speed < 50) {
-		return "You are riding Honolulu's Rail.";
-	}
-	else if (speed < 100) {
-		return "You are riding an Amtrak.";
-	}
-	else {
-		return "Now you ballin' in the Shinkansen!";
-	}
+  return (speed < 50) ? "You are riding Honolulu's Rail." : (speed < 100) ? "You are riding an Amtrak." : "Now you ballin' in the Shinkansen!";
 }
 
 console.log(moneyTrain(0) + " - Exercise 13");
@@ -343,12 +310,7 @@ function buyDoughnut() {
 
 for (i=0;i<2;i++) {
 	buyDoughnut();
-  if (i === 0) {
-	 console.log(doughnutBought + " donut bought, $" + budget + " remaining." + " - Exercise 14");
-  }
-  else if (i > 0) {
-    console.log(doughnutBought + " donuts bought, $" + budget + " remaining." + " - Exercise 14");
-  }
+  console.log(doughnutBought + (doughnutBought === 1 ? " donut " : " donuts ") + "bought, $" + budget + " remaining." + " - Exercise 14");
 }
 
 /*
